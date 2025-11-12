@@ -1,48 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="signup-nav">
+      <div class="nav-container">
+        <a href="index.html"><img class="primary-logo"src="Image/Boxer Logo.png" alt="Yonkers Knockout Logo"/></a>
+        <div class="nav-links">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="bg-2">
-    <div class="form-box">
-      <form id="signup-page">
-         <h1>SIGNUP FORM</h1>
-         <div>
-            <label for="fname" > First Name</label>
-            <input class="fname-input" type="text"  name="fname" id="fname">
+      <div class="form-box">
+        <form id="signup-page">
+          <h1>SIGNUP FORM</h1>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname" required />
+            </div>
 
-            <label for="lname">Last Name</label>
-            <input type="text" name="lname" id="lname">
-         </div>
+            <div class="input-group">
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" required />
+            </div>
+          </div>
 
-         <div>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-         </div>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
 
-         <div>
-            <label for="phone">Phone Number</label>
-            <input type="tel" name="phone"   id="phone">
-         </div>
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" required />
+            </div>
+          </div>
 
-         <div>
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="male">
+          <!-- <div class="gender-group">
+        <label>Gender:</label>
+        <div class="gender-options">
+          <input type="radio" name="gender" id="male" value="male">
+          <label for="male">Male</label>
 
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="female">
-         </div>
+          <input type="radio" name="gender" id="female" value="female">
+          <label for="female">Female</label>
+        </div>
+      </div> -->
 
-            <button class="btn" type="submit"> Join Now</button>
-
-      </form>
+          <button class="btn" type="submit">Join Now</button>
+        </form>
+      </div>
     </div>
- </div>
- <!--Footer-->
-
-</body>
+    <!--Footer-->
+  </body>
 </html>
